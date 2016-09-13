@@ -78,6 +78,9 @@ app.get('/imagesearch/:id', function(req,res) {
 
 app.get('/latest', function(req,res) {
 	Query.find().exec(function(err,docs) {
+		if (docs.length==0) {
+			res.end("No query history.");
+		}
 		var arr = [];
 		for (var i=0; i<5; i++) {
 			var obj = { term: docs[i].term };
