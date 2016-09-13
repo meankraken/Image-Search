@@ -1,1 +1,2 @@
-# Image-Search
+# Image Search API 
+## FreeCodeCamp backend project. Enter a search term as a parameter and retrieve image data. 
