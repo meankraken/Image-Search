@@ -82,7 +82,7 @@ app.get('/latest', function(req,res) {
 			res.end("No query history.");
 		}
 		var arr = [];
-		for (var i=0; i<5; i++) {
+		for (var i=0; i<docs.length; i++) {
 			var obj = { term: docs[i].term };
 			arr.push(obj);
 		}
